@@ -1,1 +1,8 @@
 .build
+install
+build-flatpak.sh
+flatpak
+run.sh
+repo
+.flatpak-builder
+*.flatpak
