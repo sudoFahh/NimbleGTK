@@ -3,3 +3,4 @@ install/
 repo/
 .flatpak-builder/
 *.flatpak
+.build/
