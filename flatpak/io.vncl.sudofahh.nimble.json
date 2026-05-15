@@ -17,18 +17,31 @@
     {
       "name": "nimble",
       "buildsystem": "simple",
+
       "build-commands": [
         "mkdir -p /app/share/nimble",
+
         "cp -r src/* /app/share/nimble/",
         "cp -r styles /app/share/nimble/",
+
         "mkdir -p /app/share/glib-2.0/schemas",
         "cp schemas/*.gschema.xml /app/share/glib-2.0/schemas/",
         "glib-compile-schemas /app/share/glib-2.0/schemas",
 
-        "install -Dm755 run.sh /app/bin/nimble-run.sh"
+        "install -Dm755 run.sh /app/bin/nimble-run.sh",
+
+        "install -Dm644 data/io.vncl.sudofahh.nimble.desktop /app/share/applications/io.vncl.sudofahh.nimble.desktop",
+
+        "install -Dm644 data/io.vncl.sudofahh.nimble.metainfo.xml /app/share/metainfo/io.vncl.sudofahh.nimble.metainfo.xml",
+
+        "install -Dm644 data/icons/hicolor/256x256/apps/io.vncl.sudofahh.nimble.png /app/share/icons/hicolor/256x256/apps/io.vncl.sudofahh.nimble.png"
       ],
+
       "sources": [
-        { "type": "dir", "path": ".." }
+        {
+          "type": "dir",
+          "path": ".."
+        }
       ]
     }
   ]

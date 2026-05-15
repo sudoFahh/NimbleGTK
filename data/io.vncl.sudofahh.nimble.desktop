@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Nimble
+Comment=Minimal GTK text editor
+Exec=nimble-run.sh
+Icon=io.vncl.sudofahh.nimble
+Terminal=false
+Type=Application
+Categories=Utility;TextEditor;
+StartupNotify=true
+Keywords=text;editor;markdown;notes;

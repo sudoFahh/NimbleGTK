@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.vncl.sudofahh.nimble</id>
+
+  <name>Nimble</name>
+
+  <summary>Minimal GTK text editor</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+
+  <description>
+    <p>
+      Nimble is a lightweight GTK4 text editor built with GJS and Libadwaita.
+    </p>
+
+    <p>
+      It supports:
+    </p>
+
+    <ul>
+      <li>Markdown highlighting</li>
+      <li>Custom fonts</li>
+      <li>Line numbers</li>
+      <li>Word wrapping</li>
+      <li>Zoom controls</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">
+    io.vncl.sudofahh.nimble.desktop
+  </launchable>
+
+  <developer_name>beigestack</developer_name>
+
+  <url type="homepage">
+    https://vncl.xyz/nimble-gtk
+  </url>
+
+  <url type="bugtracker">
+    https://github.com/beigestack/nimble-gtk/issues
+  </url>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>
+        https://vncl.xyz/nimble-gtk/screenshot.png
+      </image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1"/>
+</component>
