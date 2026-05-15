@@ -1,0 +1,13 @@
+textview {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    caret-color: #ffffff;
+}
+
+headerbar {
+    background: #202020;
+}
+
+window {
+    background: #181818;
+}

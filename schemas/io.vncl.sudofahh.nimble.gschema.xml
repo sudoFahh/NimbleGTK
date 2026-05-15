@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+
+<schema id="io.vncl.sudofahh.nimble"
+        path="/io/vncl/sudofahh/nimble/">
+
+    <key name="theme" type="s">
+      <default>'dark'</default>
+    </key>
+
+    <key name="font-family" type="s">
+      <default>'JetBrains Mono'</default>
+    </key>
+
+    <key name="font-size" type="i">
+      <default>16</default>
+    </key>
+
+    <key name="line-height" type="d">
+      <default>1.4</default>
+    </key>
+
+    <key name="show-line-numbers" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="wrap-text" type="b">
+      <default>true</default>
+    </key>
+
+  </schema>
+
+</schemalist>
