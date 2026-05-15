@@ -1,0 +1,8 @@
+[Flatpak Ref]
+Name=io.vncl.sudofahh.nimble
+Branch=master
+Title=Nimble
+Url=https://vncl.xyz/nimble-gtk/repo
+IsRuntime=false
+SuggestRemoteName=vncl
+NoGPGVerify=true
