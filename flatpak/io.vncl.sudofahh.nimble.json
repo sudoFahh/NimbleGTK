@@ -1,0 +1,35 @@
+{
+  "app-id": "io.vncl.sudofahh.nimble",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "46",
+  "sdk": "org.gnome.Sdk",
+
+  "command": "nimble-run.sh",
+
+  "finish-args": [
+    "--share=ipc",
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--filesystem=home"
+  ],
+
+  "modules": [
+    {
+      "name": "nimble",
+      "buildsystem": "simple",
+      "build-commands": [
+        "mkdir -p /app/share/nimble",
+        "cp -r src/* /app/share/nimble/",
+        "cp -r styles /app/share/nimble/",
+        "mkdir -p /app/share/glib-2.0/schemas",
+        "cp schemas/*.gschema.xml /app/share/glib-2.0/schemas/",
+        "glib-compile-schemas /app/share/glib-2.0/schemas",
+
+        "install -Dm755 run.sh /app/bin/nimble-run.sh"
+      ],
+      "sources": [
+        { "type": "dir", "path": ".." }
+      ]
+    }
+  ]
+}
